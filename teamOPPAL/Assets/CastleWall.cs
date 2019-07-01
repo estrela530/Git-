@@ -1,0 +1,36 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CastleWall : MonoBehaviour
+{
+    public int wallHp;
+    public GameObject bossEnemy;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Tama"))
+        {
+            wallHp -= 1;
+            if (wallHp == 0)
+            {
+                Destroy(collision.gameObject);
+                Instantiate(bossEnemy, new Vector3(0, 2, 0), transform.rotation);
+
+            }
+        }
+    }
+
+}
