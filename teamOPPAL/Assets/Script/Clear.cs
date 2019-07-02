@@ -19,7 +19,8 @@ public class Clear : MonoBehaviour
         enemyObj = GameObject.FindGameObjectsWithTag("Enemy");
 
         //データの入った箱の数をコンソール画面に表示
-        print(enemyObj.Length);
+        //print(enemyObj.Length);
+        print(SceneManager.sceneCount);
 
         //0になったらクリア
         if (enemyObj.Length == 0)
