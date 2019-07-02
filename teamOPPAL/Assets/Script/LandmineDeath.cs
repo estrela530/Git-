@@ -20,17 +20,11 @@ public class LandmineDeath : MonoBehaviour
     {
         //GameObject player = GameObject.FindGameObjectWithTag("Player");
         //Destroy(player);
-        GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
-<<<<<<< HEAD:teamOPPAL/Assets/LandmineDeath.cs
-        Destroy(enemy);
+        //GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
+        //Destroy(enemy);
         GameObject fragileWall = GameObject.FindGameObjectWithTag("FragileWall");
         Destroy(fragileWall);
-=======
-        Destroy(enemy);    
-        //GameObject fragileWall = GameObject.FindGameObjectWithTag("FragileWall");
-        //Destroy(fragileWall);
->>>>>>> 9c7989aece212c1d1836a8f17bb93b7b0733d729:teamOPPAL/Assets/Script/LandmineDeath.cs
-    }
+    }    
 
     void OnCollisionStay(Collision collision)
     {
