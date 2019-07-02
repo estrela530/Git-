@@ -24,10 +24,8 @@ public class LandmineDeath : MonoBehaviour
         //Destroy(enemy);
         GameObject fragileWall = GameObject.FindGameObjectWithTag("FragileWall");
         Destroy(fragileWall); 
-        //GameObject fragileWall = GameObject.FindGameObjectWithTag("FragileWall");
-        //Destroy(fragileWall);
-    }
 
+    }
     void OnCollisionStay(Collision collision)
     {
         //if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class Death : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")
+        if (collision.gameObject.CompareTag("Enemy")
             || collision.gameObject.CompareTag("Tama") || collision.gameObject.CompareTag("Bomb"))
         {
             Destroy(collision.gameObject);
@@ -42,6 +43,14 @@ public class Death : MonoBehaviour
                 Destroy(TamaPrefab);
                 PlayerBullet.shotCount -= 1;
             }
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(TamaPrefab);
+            PlayerBullet.shotCount -= 1;
+
+            SceneManager.LoadScene(0);
         }
         //else if (collision.gameObject.CompareTag("CastleWall"))
         //{
