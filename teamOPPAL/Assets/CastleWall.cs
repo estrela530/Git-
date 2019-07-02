@@ -6,6 +6,7 @@ public class CastleWall : MonoBehaviour
 {
     public int wallHp;
     public GameObject bossEnemy;
+    public GameObject CastlePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +27,8 @@ public class CastleWall : MonoBehaviour
             wallHp -= 1;
             if (wallHp == 0)
             {
-                Destroy(collision.gameObject);
                 Instantiate(bossEnemy, new Vector3(0, 2, 0), transform.rotation);
+                Destroy(CastlePrefab);
 
             }
         }

@@ -6,6 +6,9 @@ public class Death : MonoBehaviour
 {
     public GameObject TamaPrefab;
     public int TamaDeadth;
+    public int CastleWallDestoy;
+    public GameObject CastlePrefab;
+
     //public ParticleSystem particleSystem;
     //PlayerBullet playerBullet;
 
@@ -13,6 +16,7 @@ public class Death : MonoBehaviour
     void Start()
     {
         TamaDeadth = 0;
+        CastleWallDestoy = 0;
     }
 
     // Update is called once per frame
@@ -39,5 +43,13 @@ public class Death : MonoBehaviour
                 PlayerBullet.shotCount -= 1;
             }
         }
+        //else if (collision.gameObject.CompareTag("CastleWall"))
+        //{
+        //    CastleWallDestoy += 1;
+        //    if (CastleWallDestoy == 3)
+        //    {
+        //        Destroy(CastlePrefab);
+        //    }
+        //}
     }
 }

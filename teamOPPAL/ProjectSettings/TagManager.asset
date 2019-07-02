@@ -8,6 +8,8 @@ TagManager:
   - wall
   - Tama
   - Bomb
+  - CastleWall
+  - CatsleMain
   layers:
   - Default
   - TransparentFX

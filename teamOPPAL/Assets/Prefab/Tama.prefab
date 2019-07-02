@@ -124,5 +124,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TamaPrefab: {fileID: 1459918196451272145}
   TamaDeadth: 0
-  particleSystem: {fileID: 6917865054553156062, guid: f4957e72cbe42d14e85adaaa7f8e6c75,
-    type: 3}
+  CastleWallDestoy: 0
+  CastlePrefab: {fileID: 422077589, guid: a0cc7a88a084e5f468050deada4b4888, type: 3}
