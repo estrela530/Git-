@@ -8,6 +8,8 @@ TagManager:
   - wall
   - Tama
   - Bomb
+  - Fire
+  - FragileWall
   layers:
   - Default
   - TransparentFX
