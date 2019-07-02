@@ -1,31 +1,14 @@
 fileFormatVersion: 2
-guid: d7729b6a658758a4d9ef3728b7680953
+guid: 8af18af7b0d55f645ae0fe9d5a803b88
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Castle_head
-    100004: pCube10
-    100006: pCylinder7
     400000: //RootNode
-    400002: Castle_head
-    400004: pCube10
-    400006: pCylinder7
-    2100000: lambert6
-    2100002: lambert7
-    2100004: lambert8
-    2100006: Oku_hasira
-    2100008: lambert4
-    2100010: lambert5
-    2300000: Castle_head
-    2300002: pCube10
-    2300004: pCylinder7
-    3300000: Castle_head
-    3300002: pCube10
-    3300004: pCylinder7
-    4300000: Castle_head
-    4300002: pCylinder7
-    4300004: pCube10
+    2100000: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Enemy_beatle
   externalObjects: {}
   materials:
     importMaterials: 1

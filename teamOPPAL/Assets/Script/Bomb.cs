@@ -19,23 +19,10 @@ public class Bomb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //seconds += Time.deltaTime;
-        //if (seconds >= 2)
-        //{
-        //    Explode();
-        //}
+       
     }
 
-    //void ontriggerenter(gameobject other)
-    //{
-    //    if (other.gameobject.comparetag("player") || other.gameobject.comparetag("enemy")
-    //        || other.gameobject.comparetag("tama"))
-    //    {
-    //        explode();
-    //        destroy(other.gameobject);
-    //        destroy(landmine);
-    //    }
-    //}
+    
 
     void Explode()
     {

@@ -7,15 +7,12 @@ public class EnemyMove : MonoBehaviour
     public float MoveSpeed;
     public float rotationSmooth;
     public Vector3 GoalPos;
-    //Random rnd = new Random();
-    //List<Vector3> GoalPosList = new List<Vector3>();
     private float changeTargetDistance = 40.0f;
     float seconds;
 
     // Start is called before the first frame update
     void Start()
     {
-        //GoalPos = new Vector3(Random.Range(95, -95), 0, Random.Range(48, - 48));
         GoalPos = GetRandomPositionOnlevel();
     }
 

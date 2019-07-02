@@ -1,14 +1,20 @@
 fileFormatVersion: 2
-guid: b84e2c97d8f7da44ea43ad9c1d0db5f4
+guid: ad633e30af8a6524dafca97a2ff3e6de
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert1
+    2100000: hasira
+    2100002: hasira_yane
+    2100004: hasira_totu
+    2100006: lambert1
+    2100008: wall_kabe
+    2100010: wall_sita
+    2100012: wall_kasa
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface83
+    4300000: Castl_Walls
   externalObjects: {}
   materials:
     importMaterials: 1

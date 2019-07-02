@@ -1,44 +1,19 @@
 fileFormatVersion: 2
-guid: 0ca392f2fdfe42546940bfd5de3fff21
+guid: f7072d4af913105429a2e710ac9af3cb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: group11
-    100004: pasted__polySurface78
-    100006: pasted__polySurface79
-    100008: polySurface62
-    100010: polySurface78
-    100012: polySurface87
     400000: //RootNode
-    400002: group11
-    400004: pasted__polySurface78
-    400006: pasted__polySurface79
-    400008: polySurface62
-    400010: polySurface78
-    400012: polySurface87
-    2100000: hasira
-    2100002: hasira_yane
-    2100004: hasira_totu
-    2100006: lambert1
-    2100008: wall_kabe
-    2100010: wall_sita
-    2100012: wall_kasa
-    2300000: pasted__polySurface78
-    2300002: pasted__polySurface79
-    2300004: polySurface62
-    2300006: polySurface78
-    2300008: polySurface87
-    3300000: pasted__polySurface78
-    3300002: pasted__polySurface79
-    3300004: polySurface62
-    3300006: polySurface78
-    3300008: polySurface87
-    4300000: polySurface62
-    4300002: polySurface78
-    4300004: pasted__polySurface78
-    4300006: pasted__polySurface79
-    4300008: polySurface87
+    2100000: lambert6
+    2100002: lambert7
+    2100004: Oku_hasira
+    2100006: lambert4
+    2100008: lambert5
+    2100010: lambert8
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Castle_Castle
   externalObjects: {}
   materials:
     importMaterials: 1

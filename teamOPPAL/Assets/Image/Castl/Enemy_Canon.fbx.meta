@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: 06ef7faff72349b49b9f39689bc486a1
+guid: f632f8f6ce0b1da40b0902a1915a101a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert14
-    2100002: lambert17
-    2100004: lambert15
-    2100006: lambert16
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface91
+    4300000: Enemy_Canon
   externalObjects: {}
   materials:
     importMaterials: 1

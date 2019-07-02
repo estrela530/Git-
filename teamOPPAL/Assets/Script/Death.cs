@@ -10,8 +10,6 @@ public class Death : MonoBehaviour
     public int CastleWallDestoy;
     public GameObject CastlePrefab;
 
-    //public ParticleSystem particleSystem;
-    //PlayerBullet playerBullet;
 
     // Start is called before the first frame update
     void Start()

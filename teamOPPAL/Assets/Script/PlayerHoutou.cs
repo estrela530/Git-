@@ -14,10 +14,7 @@ public class PlayerHoutou : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Houtou.transform.LookAt(Houtou.transform.position);
-       
-        plane.SetNormalAndPosition(Vector3.back, transform.localPosition);
-        
+        plane.SetNormalAndPosition(Vector3.back, transform.localPosition);     
     }
 
     // Update is called once per frame

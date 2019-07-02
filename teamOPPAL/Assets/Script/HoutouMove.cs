@@ -8,12 +8,9 @@ public class HoutouMove : MonoBehaviour
     public float seconds;
     public float rotationSmooth = 1;
     private Transform Player;
-    //List<int> sp = new List<int>();
     // Start is called before the first frame update
     void Start()
     {
-        //sp.Add((int)-0.5f);
-        //sp.Add((int)0.5f);
         Player = GameObject.FindWithTag("Player").transform;
     }
 
