@@ -8,8 +8,13 @@ TagManager:
   - wall
   - Tama
   - Bomb
+<<<<<<< HEAD
   - Fire
   - FragileWall
+=======
+  - CastleWall
+  - CatsleMain
+>>>>>>> 9c7989aece212c1d1836a8f17bb93b7b0733d729
   layers:
   - Default
   - TransparentFX

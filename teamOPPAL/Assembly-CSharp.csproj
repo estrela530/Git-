@@ -48,19 +48,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>C:\Users\K018A1704\Desktop\unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:\Users\K018A1704\Desktop\unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Bomb.cs" />
     <Compile Include="Assets\DestroyExpl.cs" />
     <Compile Include="Assets\Explosionef.cs" />
     <Compile Include="Assets\GameSystem.cs" />
     <Compile Include="Assets\LandmineDeath.cs" />
     <Compile Include="Assets\Opacityy.cs" />
+=======
+    <Compile Include="Assets\CastleWall.cs" />
+>>>>>>> 9c7989aece212c1d1836a8f17bb93b7b0733d729
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -69,14 +73,20 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Script\Bomb.cs" />
     <Compile Include="Assets\Script\BombParticle.cs" />
     <Compile Include="Assets\Script\Clear.cs" />
     <Compile Include="Assets\Script\Death.cs" />
+    <Compile Include="Assets\Script\DestroyExpl.cs" />
     <Compile Include="Assets\Script\EnemyBullet.cs" />
     <Compile Include="Assets\Script\EnemyMove.cs" />
+    <Compile Include="Assets\Script\Explosionef.cs" />
+    <Compile Include="Assets\Script\GameSystem.cs" />
     <Compile Include="Assets\Script\HoutouMove.cs" />
     <Compile Include="Assets\Script\Installation.cs" />
+    <Compile Include="Assets\Script\LandmineDeath.cs" />
     <Compile Include="Assets\Script\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Script\Opacityy.cs" />
     <Compile Include="Assets\Script\PlayerBullet.cs" />
     <Compile Include="Assets\Script\PlayerHoutou.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
@@ -649,7 +659,11 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Serialization">
+<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+=======
+      <HintPath>C:/Users/K018A1704/Desktop/unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+>>>>>>> 9c7989aece212c1d1836a8f17bb93b7b0733d729
     </Reference>
   </ItemGroup>
   <ItemGroup>
