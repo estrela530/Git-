@@ -7,8 +7,6 @@ public class Bomb : MonoBehaviour
     public GameObject Landmine;
     public GameObject GetParticle;
     public GameObject GetRange;
-    public float DestroyTime;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +27,7 @@ public class Bomb : MonoBehaviour
 
         //a.Play();
         Instantiate(GetRange, transform.position, transform.rotation);
-        Destroy(Landmine);
-        DestroyImmediate(GetParticle,true);
-        DestroyImmediate(GetRange, true);
-        //Destroy(GetRange,DestroyTime);
+        Destroy(Landmine);       
     }
 
 }
