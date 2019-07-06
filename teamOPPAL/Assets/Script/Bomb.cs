@@ -8,7 +8,6 @@ public class Bomb : MonoBehaviour
     public GameObject GetParticle;
     public GameObject GetRange;
     public float DestroyTime;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -19,18 +18,21 @@ public class Bomb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+
     }
 
-    
+
 
     void Explode()
     {
         var a = Instantiate(GetParticle, transform.position, transform.rotation).GetComponent<ParticleSystem>();
-     
+
         //a.Play();
         Instantiate(GetRange, transform.position, transform.rotation);
         Destroy(Landmine);
+        DestroyImmediate(GetParticle,true);
+        DestroyImmediate(GetRange, true);
+        //Destroy(GetRange,DestroyTime);
     }
 
 }

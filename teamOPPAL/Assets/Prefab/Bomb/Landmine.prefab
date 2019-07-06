@@ -111,7 +111,7 @@ MonoBehaviour:
     type: 3}
   GetRange: {fileID: 2461372953014691760, guid: 18712f81fae0d754884fad2b913e192a,
     type: 3}
-  DestroyTime: 5
+  DestroyTime: 10
 --- !u!54 &3635117771159581014
 Rigidbody:
   m_ObjectHideFlags: 0

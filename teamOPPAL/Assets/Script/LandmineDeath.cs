@@ -36,10 +36,10 @@ public class LandmineDeath : MonoBehaviour
         //    //Destroy(collision.gameObject);
         //}
 
-        //foreach (var deathgameObject in collision.contacts)
-        //{
-        Debug.Log("if来たよ");
-        //}
+        foreach (var deathgameObject in collision.contacts)
+        {
+            Debug.Log("foreach来たよ");
+        }
     }
 
     //void OnCollisionEnter(Collision collision)
