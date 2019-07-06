@@ -76,6 +76,7 @@
     <Compile Include="Assets\Script\Death.cs" />
     <Compile Include="Assets\Script\EnemyBullet.cs" />
     <Compile Include="Assets\Script\EnemyMove.cs" />
+    <Compile Include="Assets\Script\EnemyTama.cs" />
     <Compile Include="Assets\Script\Explosionef.cs" />
     <Compile Include="Assets\Script\GameSystem.cs" />
     <Compile Include="Assets\Script\HoutouMove.cs" />
