@@ -7,7 +7,7 @@ public class PlayerBullet : MonoBehaviour
     public float shotTime;
     public GameObject TamaPrefab;
     public static int shotCount;
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +29,7 @@ public class PlayerBullet : MonoBehaviour
 
     void Shot()
     {
-        GameObject Tama = Instantiate(TamaPrefab, transform.position, transform.rotation);
+        GameObject Tama = Instantiate(TamaPrefab, transform.position,transform.rotation);
         Rigidbody tamarigidbody = Tama.GetComponent<Rigidbody>();
         tamarigidbody.AddForce(transform.forward * shotTime);
         shotCount += 1;

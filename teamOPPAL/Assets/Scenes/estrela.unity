@@ -253,6 +253,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1005755102494639457, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: Rotate_speed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
 --- !u!1 &275487924
@@ -1302,10 +1307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdc73818420ef447b2d01c3558abd4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  z: 0
   direction: {x: 0, y: 0, z: 0}
   speed: 0
+  Rotate_speed: 0
 --- !u!23 &1426851385
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1383,10 +1387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdc73818420ef447b2d01c3558abd4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 0
-  z: 0
   direction: {x: 0, y: 0, z: 0}
   speed: 0
+  Rotate_speed: 0
 --- !u!4 &1513925816
 Transform:
   m_ObjectHideFlags: 0
