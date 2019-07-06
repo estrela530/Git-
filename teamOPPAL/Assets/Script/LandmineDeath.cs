@@ -12,37 +12,45 @@ public class LandmineDeath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        var col = GetComponent<SphereCollider>();
+        var hits = Physics.SphereCastAll(col.transform.position, col.radius, transform.forward, 1000, col.gameObject.layer);
+        foreach (var hit in hits)
+        {
+            Debug.Log("if来たよ");
+            Destroy(hit.transform.gameObject);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        #region Updateゴリラ
         //GameObject player = GameObject.FindGameObjectWithTag("Player");
         //Destroy(player);
         //GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
         //Destroy(enemy);
         //GameObject fragileWall = GameObject.FindGameObjectWithTag("FragileWall");
         //Destroy(fragileWall); 
-
-    }
-    void OnCollisionStay(Collision collision)
-    {
-        //if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")
-        //    || collision.gameObject.CompareTag("fragileWall"))
-        //{
-        //    Debug.Log("if来たよ");
-        //    deathobjectlist.Add(collision.gameObject);
-        //    //Destroy(collision.gameObject);
-        //}
-
-        foreach (var deathgameObject in collision.contacts)
-        {
-            Debug.Log("foreach来たよ");
-        }
+        #endregion
     }
 
-    //void OnCollisionEnter(Collision collision)
+    //void OnCollisionStay(Collision collision)
+    //{
+    //if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy")
+    //    || collision.gameObject.CompareTag("fragileWall"))
+    //{
+    //    Debug.Log("if来たよ");
+    //    deathobjectlist.Add(collision.gameObject);
+    //    //Destroy(collision.gameObject);
+    //}
+
+    //foreach (var deathgameObject in collision.contacts)
+    //{
+    //    Debug.Log("foreach来たよ");
+    //}
+    //}
+
+    #region   //void OnCollisionEnter(Collision collision)
     //{
     //    if (collision.gameObject.CompareTag("Player"))
     //    {
@@ -67,6 +75,6 @@ public class LandmineDeath : MonoBehaviour
     //Ray ray = new Ray(pos, direction);
     //RaycastHit[] hit_list;
     //float max_distance = 10.0f;
-
+    #endregion
 
 }
