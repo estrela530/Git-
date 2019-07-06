@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 8821568648125902974, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.2
+      value: 10.12
       objectReference: {fileID: 0}
     - target: {fileID: 8821568648125902974, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
         type: 3}
@@ -204,11 +204,44 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 11.25
       objectReference: {fileID: 0}
+    - target: {fileID: 1005755102494639463, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 236041019878749375, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005755102494639459, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005755102494639462, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005755102163154118, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: Body
+      value: 
+      objectReference: {fileID: 1842232746}
+    - target: {fileID: 3675824700347788747, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: TamaPrefab
+      value: 
+      objectReference: {fileID: 6766456656539103380, guid: ef47e9d2ca3556348a5a5175a6297d77,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 2962157659634566871, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
     - {fileID: 1005755101700117864, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
     - {fileID: 1005755101700117867, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
     - {fileID: 1005755102494639456, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
+    - {fileID: 236041019878749375, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
+    - {fileID: 1005755102494639462, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
 --- !u!1001 &181047044
 PrefabInstance:
@@ -610,7 +643,7 @@ GameObject:
   - component: {fileID: 502144510}
   m_Layer: 0
   m_Name: Quad
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1277,6 +1310,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771085031}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1842232746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1005755102494639460, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+    type: 3}
+  m_PrefabInstance: {fileID: 6128918}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1846641599
 PrefabInstance:
   m_ObjectHideFlags: 0

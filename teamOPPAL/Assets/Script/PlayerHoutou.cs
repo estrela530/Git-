@@ -6,11 +6,19 @@ public class PlayerHoutou : MonoBehaviour
 {
     Plane plane = new Plane();//3D空間での2Dの表現
     float distance = 0;
+    Rigidbody rH;
+    //public GameObject Body;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        plane.SetNormalAndPosition(Vector3.back, transform.localPosition);     
+        plane.SetNormalAndPosition(Vector3.back, transform.localPosition);
+
+        //rH = Body.GetComponent<Rigidbody>();
+
+        //Body = transform.root.gameObject;
+
     }
 
     // Update is called once per frame
@@ -24,6 +32,8 @@ public class PlayerHoutou : MonoBehaviour
     void Turn()
     {
        
+        //rH.constraints = RigidbodyConstraints.FreezeRotationX;
+
         //カメラとマウスの位置をもとにRayを用意
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
