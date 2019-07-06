@@ -41,6 +41,7 @@ public class PlayerTama : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Player"))
         {
+            PlayerBullet.shotCount -= 1;
             Destroy(TamaPrefab);
         }
         //else if (collision.gameObject.CompareTag("CastleWall"))
