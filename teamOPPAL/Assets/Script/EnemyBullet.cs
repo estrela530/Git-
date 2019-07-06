@@ -7,6 +7,7 @@ public class EnemyBullet : MonoBehaviour
     public float shotTime;
     public GameObject TamaPrefab;
     public float seconds;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,7 @@ public class EnemyBullet : MonoBehaviour
 
     void Shot()
     {
-        GameObject Tama = Instantiate(TamaPrefab, transform.position, Quaternion.identity);
+        GameObject Tama = Instantiate(TamaPrefab, transform.position, transform.rotation);
         Rigidbody tamarigidbody = Tama.GetComponent<Rigidbody>();
         tamarigidbody.AddForce(transform.forward * shotTime);
     }

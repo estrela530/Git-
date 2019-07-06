@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2598690499575724661}
   - component: {fileID: 6878896217351819138}
   - component: {fileID: 5550181251861219510}
+  - component: {fileID: 104286076016433927}
   m_Layer: 0
   m_Name: EnemyTama
   m_TagString: Tama
@@ -109,3 +110,19 @@ CapsuleCollider:
   m_Height: 0.40330398
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &104286076016433927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226489651679092471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cb749ec7074fe5418312f2ae3e5d298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TamaPrefab: {fileID: 226489651679092471}
+  TamaDeadth: 0
+  CastleWallDestoy: 0
+  CastlePrefab: {fileID: 0}

@@ -6,17 +6,25 @@ public class PlayerHoutou : MonoBehaviour
 {
     Plane plane = new Plane();//3D空間での2Dの表現
     float distance = 0;
+    float RayLength = 100;
+    int Quad;
     Rigidbody rH;
+    #region Ray
+    //float HotoRotX;
+    //RaycastHit distance;
+    #endregion
     //public GameObject Body;
-    
+
 
     // Start is called before the first frame update
     void Start()
     {
         plane.SetNormalAndPosition(Vector3.back, transform.localPosition);
-
+        #region Ray     
+        //Quad = LayerMask.GetMask("Ground");
+        #endregion
         //rH = Body.GetComponent<Rigidbody>();
-
+        //rH = GetComponent<Rigidbody>();
         //Body = transform.root.gameObject;
 
     }
@@ -30,9 +38,8 @@ public class PlayerHoutou : MonoBehaviour
 
     void Turn()
     {
+        Debug.Log(Input.mousePosition);
        
-        //rH.constraints = RigidbodyConstraints.FreezeRotationX;
-
         //カメラとマウスの位置をもとにRayを用意
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -48,10 +55,26 @@ public class PlayerHoutou : MonoBehaviour
         {
             //距離をもとに交差を計算し、交点の方を向く
             var lookPoint = ray.GetPoint(distance);
-         
+
             transform.LookAt(lookPoint);
         }
 
-       
+
+        #region Ray
+        //if (Physics.Raycast(ray, out distance,RayLength,Quad))
+        //{
+        //    //距離をもとに交差を計算し、交点の方を向く
+        //    //var lookPoint = ray.GetPoint(distance);
+        //    Vector3 playerToMouse = distance.point - transform.position;
+        //    playerToMouse.y = 0f;
+        //    Quaternion newRota = Quaternion.LookRotation(playerToMouse);
+
+        //    rH.MoveRotation(newRota);
+        //    //transform.LookAt(lookPoint);
+        //}
+        #endregion
+
     }
+
+
 }

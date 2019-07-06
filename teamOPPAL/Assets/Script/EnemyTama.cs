@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class PlayerTama : MonoBehaviour
+public class EnemyTama : MonoBehaviour
 {
     public GameObject TamaPrefab;
     public int TamaDeadth;
@@ -21,14 +20,15 @@ public class PlayerTama : MonoBehaviour
     {
         
     }
+
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")
+        if (collision.gameObject.CompareTag("Player")
             || collision.gameObject.CompareTag("Tama") || collision.gameObject.CompareTag("Bomb"))
         {
             Destroy(collision.gameObject);
             Destroy(TamaPrefab);
-            PlayerBullet.shotCount -= 1;
+            
         }
         else if (collision.gameObject.CompareTag("wall"))
         {
@@ -36,12 +36,11 @@ public class PlayerTama : MonoBehaviour
             if (TamaDeadth == 2)
             {
                 Destroy(TamaPrefab);
-                PlayerBullet.shotCount -= 1;
+                
             }
         }
-        else if (collision.gameObject.CompareTag("Player"))
+        else if (collision.gameObject.CompareTag("Enemy"))
         {
-            PlayerBullet.shotCount -= 1;
             Destroy(TamaPrefab);
         }
         //else if (collision.gameObject.CompareTag("CastleWall"))
