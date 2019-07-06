@@ -6,10 +6,6 @@ public class PlayerHoutou : MonoBehaviour
 {
     Plane plane = new Plane();//3D空間での2Dの表現
     float distance = 0;
-    
-   
-  
-    
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +39,7 @@ public class PlayerHoutou : MonoBehaviour
         {
             //距離をもとに交差を計算し、交点の方を向く
             var lookPoint = ray.GetPoint(distance);
-
+         
             transform.LookAt(lookPoint);
         }
 
