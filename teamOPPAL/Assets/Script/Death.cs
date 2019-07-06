@@ -9,13 +9,14 @@ public class Death : MonoBehaviour
     public int TamaDeadth;
     public int CastleWallDestoy;
     public GameObject CastlePrefab;
-
+    Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
         TamaDeadth = 0;
         CastleWallDestoy = 0;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -35,7 +36,10 @@ public class Death : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("wall"))
         {
+            
             TamaDeadth += 1;
+            rb.constraints = RigidbodyConstraints.FreezeRotationX;
+            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
             if (TamaDeadth == 2)
             {
                 Destroy(TamaPrefab);

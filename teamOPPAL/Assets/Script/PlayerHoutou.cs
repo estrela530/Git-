@@ -16,7 +16,6 @@ public class PlayerHoutou : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
         
         Turn();
     }
