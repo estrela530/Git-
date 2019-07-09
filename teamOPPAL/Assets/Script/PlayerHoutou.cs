@@ -38,7 +38,7 @@ public class PlayerHoutou : MonoBehaviour
 
     void Turn()
     {
-        Debug.Log(Input.mousePosition);
+        //Debug.Log(Input.mousePosition);
        
         //カメラとマウスの位置をもとにRayを用意
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);

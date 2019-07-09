@@ -8,16 +8,31 @@ public class LandmineDeath : MonoBehaviour
     Vector3 origin1;
     Vector3 directions;
     List<GameObject> deathobjectlist = new List<GameObject>();
+    Vector3 center = new Vector3(0, 0, 0);
+    public float radius;
 
     // Start is called before the first frame update
     void Start()
     {
-        var col = GetComponent<SphereCollider>();
-        var hits = Physics.SphereCastAll(col.transform.position, col.radius, transform.forward, 1000, col.gameObject.layer);
-        foreach (var hit in hits)
+        //var col = GetComponent<SphereCollider>();
+        //var hits = Physics.SphereCastAll(col.transform.position, col.radius, transform.forward, 1000, col.gameObject.layer);
+        //foreach (var hit in hits)
+        //{
+        //    Debug.Log("if来たよ");
+        //    Destroy(hit.transform.gameObject);
+        //}
+        ExpDestroy(center, radius);
+    }
+
+    void ExpDestroy(Vector3 center, float radius)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(center, radius);
+        int i = 0;
+        while (i < hitColliders.Length)
         {
-            Debug.Log("if来たよ");
-            Destroy(hit.transform.gameObject);
+           
+            Destroy(hitColliders[i].gameObject);
+            i++;
         }
     }
 
