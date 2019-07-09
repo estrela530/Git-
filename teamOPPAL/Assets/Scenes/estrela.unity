@@ -201,12 +201,12 @@ PrefabInstance:
     - target: {fileID: 8821568648125902974, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8
+      value: 20.33
       objectReference: {fileID: 0}
     - target: {fileID: 8821568648125902974, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.6
+      value: -43.07
       objectReference: {fileID: 0}
     - target: {fileID: 8821568648125902974, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
         type: 3}
@@ -257,6 +257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Rotate_speed
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1005755102494639459, guid: a2bea5771acaa5a41ac5b2c3ccbbd162,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2bea5771acaa5a41ac5b2c3ccbbd162, type: 3}
@@ -855,6 +860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FrgileYousuke
+      objectReference: {fileID: 0}
+    - target: {fileID: 323933296793587953, guid: c2ac5b3feb3b93342962e65263ea07b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 323933296793589517, guid: c2ac5b3feb3b93342962e65263ea07b0,
         type: 3}
