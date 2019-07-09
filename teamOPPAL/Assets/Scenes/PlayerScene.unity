@@ -660,7 +660,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 47.81, y: 0, z: 0}
 --- !u!1 &403784552 stripped
 GameObject:
@@ -1342,6 +1342,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 181047044}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1486349898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2002076975}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486349899}
+  m_Layer: 0
+  m_Name: Enemy Move (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1486349899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 2002076975}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486349898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1566017171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,8 +1460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallHp: 5
-  bossEnemy: {fileID: 6524255919112816257, guid: b42a9c9a44445d444a2ecd23c397511c,
-    type: 3}
+  bossEnemy: {fileID: 0}
   CastlePrefab: {fileID: 1720215944}
 --- !u!65 &1720215946
 BoxCollider:
