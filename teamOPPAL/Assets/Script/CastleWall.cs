@@ -22,7 +22,7 @@ public class CastleWall : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Tama"))
+        if (collision.gameObject.CompareTag("PlayerTama"))
         {
             wallHp -= 1;
             if (wallHp == 0)

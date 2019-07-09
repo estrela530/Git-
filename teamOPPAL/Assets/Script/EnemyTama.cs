@@ -8,17 +8,23 @@ public class EnemyTama : MonoBehaviour
     public int TamaDeadth;
     public int CastleWallDestoy;
     public GameObject CastlePrefab;
+
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         TamaDeadth = 0;
         CastleWallDestoy = 0;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (rb.velocity.magnitude != 0)
+        {
+            transform.rotation = Quaternion.LookRotation(rb.velocity.normalized);
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -33,6 +39,7 @@ public class EnemyTama : MonoBehaviour
         else if (collision.gameObject.CompareTag("wall"))
         {
             TamaDeadth += 1;
+
             if (TamaDeadth == 2)
             {
                 Destroy(TamaPrefab);
