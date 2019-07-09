@@ -11,7 +11,12 @@ TagManager:
   - CastleWall
   - Enemy
   - Ground
+<<<<<<< HEAD
   - FragileWall
+=======
+  - PlayerTama
+  - EnemyTama
+>>>>>>> cdecb4d5af951be4501ff52a856cc060c7f33b20
   layers:
   - Default
   - TransparentFX

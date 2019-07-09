@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5155645630055674744}
   m_Layer: 0
   m_Name: PlayerTama
-  m_TagString: Tama
+  m_TagString: PlayerTama
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

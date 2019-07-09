@@ -24,11 +24,12 @@ public class Clear : MonoBehaviour
         //print(enemyObj.Length);
         //print(SceneManager.sceneCount);
 
-        print(SceneManager.GetActiveScene().buildIndex); 
+        //print(SceneManager.GetActiveScene().buildIndex); 
         //0になったらクリア
         if (enemyObj.Length == 0)
         {
-            SceneManager.LoadScene("Stage1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            //SceneManager.LoadScene("Stage1");
         }
         if (Input.GetButtonDown("Jump"))
         {
