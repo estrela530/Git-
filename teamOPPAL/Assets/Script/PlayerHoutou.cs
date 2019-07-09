@@ -32,20 +32,20 @@ public class PlayerHoutou : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         Turn();
     }
 
     void Turn()
     {
         Debug.Log(Input.mousePosition);
-       
+
         //カメラとマウスの位置をもとにRayを用意
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         //プレイヤーの高さにPlaneを更新して、カメラの情報をもとに
         //地面の判定をして距離を取得
-        plane.SetNormalAndPosition(Vector3.up , transform.localPosition);
+        plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
 
         //Vector3 targetPos =  Houtou.transform.position;
         //targetPos.x = Houtou.transform.position.x;
@@ -59,6 +59,10 @@ public class PlayerHoutou : MonoBehaviour
             transform.LookAt(lookPoint);
         }
 
+        Quaternion a = transform.localRotation;
+        a.z = 0;
+        a.x = 0;
+        transform.localRotation = a;
 
         #region Ray
         //if (Physics.Raycast(ray, out distance,RayLength,Quad))
