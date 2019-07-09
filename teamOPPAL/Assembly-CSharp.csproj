@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\des.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -68,6 +69,7 @@
      <Compile Include="Assets\Script\Death.cs" />
      <Compile Include="Assets\Script\EnemyBullet.cs" />
      <Compile Include="Assets\Script\EnemyMove.cs" />
+     <Compile Include="Assets\Script\EnemyTama.cs" />
      <Compile Include="Assets\Script\Explosionef.cs" />
      <Compile Include="Assets\Script\GameSystem.cs" />
      <Compile Include="Assets\Script\HoutouMove.cs" />
@@ -77,6 +79,7 @@
      <Compile Include="Assets\Script\PlayerBullet.cs" />
      <Compile Include="Assets\Script\PlayerHoutou.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
+     <Compile Include="Assets\Script\PlayerTama.cs" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/K018A1697/Desktop/おっ過ご/opp/teamOPPAL/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
