@@ -11,6 +11,7 @@ TagManager:
   - CastleWall
   - Enemy
   - Ground
+  - FragileWall
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Frgile
   - 
   - 
   - 

@@ -8,7 +8,7 @@ public class LandmineDeath : MonoBehaviour
     Vector3 origin1;
     Vector3 directions;
     List<GameObject> deathobjectlist = new List<GameObject>();
-    Vector3 center = new Vector3(0, 0, 0);
+    Vector3 center;
     public float radius;
 
     // Start is called before the first frame update
@@ -30,9 +30,18 @@ public class LandmineDeath : MonoBehaviour
         int i = 0;
         while (i < hitColliders.Length)
         {
+            //hitColliders[i].SendMessage("鈴木");
+            Debug.Log(center);
             Destroy(hitColliders[i].gameObject);
             i++;
         }
+        
+
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    Destroy(hitColliders[i].gameObject);
+        //    i++;
+        //}
     }
 
     // Update is called once per frame
