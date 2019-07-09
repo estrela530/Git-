@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 529059955585212498}
   - component: {fileID: 529059955585212497}
   m_Layer: 0
-  m_Name: block1
+  m_Name: LongYousuke
   m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 529059955585212496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -35, y: 0, z: -20}
-  m_LocalScale: {x: 10, y: 10.5, z: 60}
+  m_LocalScale: {x: 10, y: 10, z: 60}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
