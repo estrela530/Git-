@@ -11,6 +11,8 @@ TagManager:
   - CastleWall
   - Enemy
   - Ground
+  - PlayerTama
+  - EnemyTama
   layers:
   - Default
   - TransparentFX
