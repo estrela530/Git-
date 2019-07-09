@@ -30,7 +30,6 @@ public class LandmineDeath : MonoBehaviour
         int i = 0;
         while (i < hitColliders.Length)
         {
-           
             Destroy(hitColliders[i].gameObject);
             i++;
         }

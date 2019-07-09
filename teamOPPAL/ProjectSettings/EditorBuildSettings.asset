@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: d6a2b050f8b992b48a86c0f054f0fd64
   - enabled: 0
     path: Assets/Scenes/Tuturial_1.unity
-    guid: 8e7241fafcf0c8a40b06ba53ca12fe39
+    guid: d771dce790e82bc42b83b956f7dc96ee
   - enabled: 1
     path: Assets/Scenes/Tuturial_2.unity
     guid: 23a85c295ed03f14faaecd0fe0829517
