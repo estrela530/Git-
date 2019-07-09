@@ -5,21 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - wall
-  - EnemyTama
-  - PlayerTama
-<<<<<<< HEAD
+  - FragileWall
   - CastleWall
   - Tama
   - Enemy
+  - Ground
   - Bomb
   - CatsleMain
-  - FragileWall
-  - Ground
-=======
-  - Bomb
-  - Tama
-  - FragileWall
->>>>>>> 50cf9ff67e6cc32c567b524f0f238915f7962e28
   layers:
   - Default
   - TransparentFX
@@ -29,11 +21,7 @@ TagManager:
   - UI
   - 
   - 
-<<<<<<< HEAD
-  - Frgile
-=======
   - Fragile
->>>>>>> 50cf9ff67e6cc32c567b524f0f238915f7962e28
   - 
   - 
   - 

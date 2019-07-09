@@ -26,7 +26,7 @@ public class LandmineDeath : MonoBehaviour
 
     void ExpDestroy(Vector3 center, float radius)
     {
-        Collider[] hitColliders = Physics.OverlapSphere(center, radius, 8);
+        Collider[] hitColliders = Physics.OverlapSphere(center,radius,);
         int i = 0;
         while (i < hitColliders.Length)
         {
@@ -35,13 +35,6 @@ public class LandmineDeath : MonoBehaviour
             Destroy(hitColliders[i].gameObject);
             i++;
         }
-
-
-        //for (int i = 0; i < 10; i++)
-        //{
-        //    Destroy(hitColliders[i].gameObject);
-        //    i++;
-        //}
     }
 
     // Update is called once per frame
