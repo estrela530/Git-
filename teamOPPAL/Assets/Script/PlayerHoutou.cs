@@ -6,7 +6,7 @@ public class PlayerHoutou : MonoBehaviour
 {
     Plane plane = new Plane();//3D空間での2Dの表現
     float distance = 0;
-    float RayLength = 100;
+    //float RayLength = 100;
     int Quad;
     Rigidbody rH;
     #region Ray

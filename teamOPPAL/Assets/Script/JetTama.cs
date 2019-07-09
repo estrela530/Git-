@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyTama : MonoBehaviour
+public class JetTama : MonoBehaviour
 {
     public GameObject TamaPrefab;
     public int TamaDeadth;
@@ -37,27 +37,9 @@ public class EnemyTama : MonoBehaviour
             Destroy(TamaPrefab);
 
         }
-        else if (collision.gameObject.CompareTag("wall"))
-        {
-            TamaDeadth += 1;
-
-            if (TamaDeadth == 2)
-            {
-                Destroy(TamaPrefab);
-
-            }
-        }
-        else if (collision.gameObject.CompareTag("Enemy"))
+        else if (collision.gameObject.CompareTag("wall")|| collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(TamaPrefab);
         }
-        //else if (collision.gameObject.CompareTag("CastleWall"))
-        //{
-        //    CastleWallDestoy += 1;
-        //    if (CastleWallDestoy == 3)
-        //    {
-        //        Destroy(CastlePrefab);
-        //    }
-        //}
     }
 }
